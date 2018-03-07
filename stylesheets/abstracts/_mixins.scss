@@ -1,0 +1,20 @@
+// Prefixes for flexbox
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin button($width, $height, $color, $background-color, $border-color:null) {
+    @if $border-color {
+        border: 1px solid $border-color;
+    }
+
+    width: $width;
+    height: $height;
+    color: $color;
+    background-color: $background-color;
+    border-radius: 2px;
+}

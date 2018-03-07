@@ -1,0 +1,80 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #595959;
+  text-decoration: none; }
+  a:visited {
+    color: #595959; }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/proxima/proximanova-regular-webfont.woff2") format("woff2"), url("fonts/proxima/proximanova-regular-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url("fonts/proxima/proximanova-semibold-webfont.woff2") format("woff2"), url("fonts/proxima/proximanova-semibold-webfont.woff") format("woff"); }
+
+html, body {
+  font-family: "Proxima Nova"; }
+
+header, button {
+  font-family: "Proxima Nova Semibold"; }
+
+header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px; }
+  header nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 1240px;
+    max-width: 1240px;
+    margin: auto;
+    padding: 0 50px;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: center; }
+
+.header-nav-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center; }
+  .header-nav-wrap a:hover {
+    color: #32ADE6; }
+  .header-nav-wrap .header-nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 600px;
+    font-size: 1.125em;
+    justify-content: space-evenly;
+    list-style-type: none; }
+    .header-nav-wrap .header-nav li {
+      display: inline; }
+      .header-nav-wrap .header-nav li a.login {
+        color: #32ADE6; }
+
+.header-demo {
+  border: 1px solid #32ADE6;
+  width: 180px;
+  height: 44px;
+  color: #32ADE6;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  font-size: 1.125em; }

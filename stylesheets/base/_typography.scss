@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("fonts/proxima/proximanova-regular-webfont.woff2") format("woff2"),
+         url("fonts/proxima/proximanova-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Proxima Nova Semibold";
+    src: url("fonts/proxima/proximanova-semibold-webfont.woff2") format("woff2"),
+         url("fonts/proxima/proximanova-semibold-webfont.woff") format("woff");
+}
+
+html, body {
+    font-family: "Proxima Nova";
+}
+
+header, button {
+    font-family: "Proxima Nova Semibold";
+}

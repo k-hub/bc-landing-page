@@ -1,0 +1,54 @@
+$navbar-height: 60px;
+$navbar-font-size: 1.125em;
+$navbar-width: 1240px;
+$navbar-padding: 0 50px;
+$navbar-header-nav-width: 600px;
+
+header {
+    @include flexbox();
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: $navbar-height;
+
+    nav {
+        @include flexbox();
+        width: $navbar-width;
+        max-width: $navbar-width;
+        margin: auto;
+        padding: $navbar-padding;
+        white-space: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header-nav-wrap {
+    @include flexbox();
+    align-items: center;
+
+    a:hover {
+        color: $picton-blue;
+    }
+
+    .header-nav {
+        @include flexbox();
+        width: $navbar-header-nav-width;
+        font-size: $navbar-font-size;
+        justify-content: space-evenly;
+        list-style-type: none;
+
+        li {
+            display: inline;
+
+            a.login {
+                color: $picton-blue;
+            }
+        }
+    }
+}
+
+.header-demo {
+    @include button($width: 180px, $height: 44px, $color: $picton-blue, $background-color: $white, $border-color: $picton-blue);
+    font-size: $navbar-font-size;
+}
