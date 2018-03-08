@@ -1,4 +1,6 @@
-// Prefixes for flexbox
+//*
+/// Prefixes for flexbox
+///
 @mixin flexbox() {
     display: -webkit-box;
     display: -moz-box;
@@ -7,14 +9,29 @@
     display: flex;
 }
 
-@mixin button($width, $height, $color, $background-color, $border-color:null) {
+//*
+/// Generate button with custom styles
+/// @param  {String} $width
+/// @param  {String} $height
+/// @param  {String} $background-color
+/// @param  {String} $border-color (optional)
+///
+@mixin button($width, $height, $background-color, $border-color:null) {
     @if $border-color {
         border: 1px solid $border-color;
     }
 
     width: $width;
     height: $height;
-    color: $color;
     background-color: $background-color;
     border-radius: 2px;
+}
+
+@mixin breakpoint($breakpoint-name) {
+    @if $breakpoint-name == 'large' {
+        @media only screen and (min-width: 1000px) { @content; }
+    }
+    @else if $breakpoint-name == 'medium' {
+        @media only screen and (max-width: 999px) { @content; }
+    }
 }

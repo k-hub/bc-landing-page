@@ -1,15 +1,23 @@
-$navbar-height: 60px;
+//*
+/// Navbar variables
+///
+$navbar-height-full: 60px;
+$navbar-height-medium: 50px;
 $navbar-font-size: 1.125em;
 $navbar-width: 1240px;
 $navbar-padding: 0 50px;
 $navbar-header-nav-width: 600px;
 
 header {
+    @include breakpoint('large') {
+        height: $navbar-height-full;
+    }
     @include flexbox();
+    display: relative;
     position: fixed;
     top: 0;
     width: 100%;
-    height: $navbar-height;
+    height: $navbar-height-medium;
 
     nav {
         @include flexbox();
@@ -23,24 +31,29 @@ header {
     }
 }
 
-.header-nav-wrap {
-    @include flexbox();
-    align-items: center;
+.header-logo {
+    .logo-bc-full-small {
+        @include breakpoint('large') {
+            display: none;
+        }
+    }
 
+    .logo-bc-full {
+        @include breakpoint('medium') {
+            display: none;
+        }
+    }
+}
+
+.header-nav-expanded, .header-nav-compact {
     a:hover {
         color: $picton-blue;
     }
 
     .header-nav {
-        @include flexbox();
-        width: $navbar-header-nav-width;
         font-size: $navbar-font-size;
-        justify-content: space-evenly;
-        list-style-type: none;
 
         li {
-            display: inline;
-
             a.login {
                 color: $picton-blue;
             }
@@ -48,7 +61,72 @@ header {
     }
 }
 
-.header-demo {
-    @include button($width: 180px, $height: 44px, $color: $picton-blue, $background-color: $white, $border-color: $picton-blue);
-    font-size: $navbar-font-size;
+.header-nav-expanded {
+    @include breakpoint('medium') {
+        display: none;
+    }
+    @include flexbox();
+    align-items: center;
+
+    .header-nav {
+        @include flexbox();
+        width: $navbar-header-nav-width;
+        justify-content: space-evenly;
+        list-style-type: none;
+
+        li {
+            display: inline;
+        }
+    }
+
+    .header-demo {
+        @include button(
+            $width: 180px,
+            $height: 44px,
+            $background-color: $white,
+            $border-color: $picton-blue
+        );
+        color: $picton-blue;
+        font-size: $navbar-font-size;
+    }
+}
+
+.header-nav-compact {
+    @include breakpoint('large') {
+        display: none;
+    }
+
+    .menu-icon {
+        background-image: url('../../assets/hamburger-menu.svg');
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        background-size: 24px 24px;
+        cursor: pointer;
+    }
+
+    #menuTrigger, .header-nav {
+        display: none;
+    }
+
+    #menuTrigger:checked + .header-nav {
+        display: block;
+    }
+
+    .header-nav {
+        position: absolute;
+        top: $navbar-height-medium;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: $white;
+        text-align: center;
+
+        li {
+            padding: 15px 0;
+            border-top: 1px solid $mercury;
+        }
+    }
 }
