@@ -1,4 +1,5 @@
 $herobanner-height: 41.8125em;
+$herobanner-font-color: $white;
 
 .hero-banner {
     @include breakpoint('small') {
@@ -13,6 +14,6 @@ $herobanner-height: 41.8125em;
         position: absolute;
         bottom: 0;
         width: 100vw;
-        height: 15vw;
+        height: 10vw;
     }
 }

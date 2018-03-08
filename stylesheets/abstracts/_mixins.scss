@@ -28,13 +28,13 @@
 }
 
 @mixin breakpoint($breakpoint-name) {
-    @if $breakpoint-name == 'large' {
-        @media only screen and (min-width: 1000px) { @content; }
+    @if $breakpoint-name == 'small' {
+        @media only screen and (max-width: 800px) { @content; }
     }
     @else if $breakpoint-name == 'medium' {
-        @media only screen and (min-width: 800px) and (max-width: 999px) { @content; }
+        @media only screen and (min-width: 801px) and (max-width: 999px) { @content; }
     }
-    @else if $breakpoint-name == 'small' {
-        @media only screen and (max-width: 801px) { @content; }
+    @else if $breakpoint-name == 'large' {
+        @media only screen and (min-width: 1000px) { @content; }
     }
 }

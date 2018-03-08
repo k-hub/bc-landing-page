@@ -1,3 +1,8 @@
+//*
+/// Typography variables
+///
+$typography-default-font-size: 18px;
+
 @font-face {
     font-family: "Proxima Nova";
     src: url("fonts/proxima/proximanova-regular-webfont.woff2") format("woff2"),
@@ -12,8 +17,20 @@
 
 html, body {
     font-family: "Proxima Nova";
+    font-size: $typography-default-font-size;
 }
 
 header, button {
     font-family: "Proxima Nova Semibold";
+    font-size: $typography-default-font-size;
+}
+
+h1 {
+    font-size: 72px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0;
 }
