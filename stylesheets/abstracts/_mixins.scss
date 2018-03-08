@@ -11,18 +11,16 @@
 
 //*
 /// Generate button with custom styles
-/// @param  {String} $width
-/// @param  {String} $height
 /// @param  {String} $background-color
+/// @param  {String} $height (optional)
 /// @param  {String} $border-color (optional)
 ///
-@mixin button($width, $height, $background-color, $border-color:null) {
+@mixin button($background-color, $height: 44px, $border-color:null) {
     @if $border-color {
         border: 1px solid $border-color;
     }
-
-    width: $width;
     height: $height;
+    padding: 0 30px;
     background-color: $background-color;
     border-radius: 2px;
 }

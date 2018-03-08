@@ -1,4 +1,3 @@
-// .demo {
-//     @include button(180px, 44px, $white);
-// }
-// $width, $height, $color, $background-color, $border-color:null
+button {
+    @include button($background-color: $white);
+}

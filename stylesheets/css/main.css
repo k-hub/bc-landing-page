@@ -1,4 +1,4 @@
-html, body {
+body {
   margin: 0;
   padding: 0; }
 
@@ -22,21 +22,33 @@ a {
   font-family: "Proxima Nova Semibold";
   src: url("fonts/proxima/proximanova-semibold-webfont.woff2") format("woff2"), url("fonts/proxima/proximanova-semibold-webfont.woff") format("woff"); }
 
-html, body {
+html, body, button {
   font-family: "Proxima Nova";
   font-size: 18px; }
 
-header, button {
-  font-family: "Proxima Nova Semibold";
-  font-size: 18px; }
+h1, h2, h3 {
+  margin: 0; }
 
 h1 {
-  font-size: 72px;
-  margin: 0; }
+  font-size: 72px; }
+  @media only screen and (max-width: 800px) {
+    h1 {
+      font-size: 36px; } }
 
 h2 {
-  font-size: 36px;
-  margin: 0; }
+  font-size: 36px; }
+
+h3 {
+  font-size: 32px; }
+  @media only screen and (max-width: 800px) {
+    h3 {
+      font-size: 18px; } }
+
+button {
+  height: 44px;
+  padding: 0 30px;
+  background-color: #FFFFFF;
+  border-radius: 2px; }
 
 header {
   display: -webkit-box;
@@ -109,13 +121,9 @@ header {
       .header-nav-expanded .header-nav li:first-child {
         margin-left: 0; }
   .header-nav-expanded .header-demo-button {
-    border: 1px solid #32ADE6;
-    width: 180px;
-    height: 44px;
-    background-color: #FFFFFF;
-    border-radius: 2px;
     margin-left: 30px;
-    color: #32ADE6; }
+    color: #32ADE6;
+    border-color: #32ADE6; }
 
 @media only screen and (min-width: 1000px) {
   .header-nav-compact {
@@ -151,17 +159,54 @@ header {
     border-top: 1px solid #E5E5E5; }
 
 .hero-banner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   position: relative;
-  height: 41.8125em;
+  height: 670px;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
   background-color: #1D58BC; }
   @media only screen and (max-width: 800px) {
     .hero-banner {
       height: 300px; } }
   .hero-banner svg {
     position: absolute;
+    left: 0;
     bottom: 0;
     width: 100vw;
     height: 10vw; }
+
+.banner-content {
+  position: relative;
+  width: 1240px;
+  max-width: 1240px;
+  letter-spacing: 1.5px; }
+  @media only screen and (max-width: 800px) {
+    .banner-content {
+      width: auto; } }
+  .banner-content h3 {
+    margin: 30px 0; }
+  .banner-content .demo-button {
+    padding: 0 25px;
+    color: #1D58BC; }
+  .banner-content .iphone {
+    display: none;
+    position: absolute;
+    top: -115px; }
+    @media only screen and (min-width: 1000px) {
+      .banner-content .iphone {
+        display: block;
+        height: 650px;
+        right: 0; } }
+    @media only screen and (min-width: 1200px) {
+      .banner-content .iphone {
+        display: block;
+        right: 110px; } }
 
 header {
   background-color: white; }

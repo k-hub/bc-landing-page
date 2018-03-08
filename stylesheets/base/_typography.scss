@@ -15,22 +15,29 @@ $typography-default-font-size: 18px;
          url("fonts/proxima/proximanova-semibold-webfont.woff") format("woff");
 }
 
-html, body {
+html, body, button {
     font-family: "Proxima Nova";
     font-size: $typography-default-font-size;
 }
 
-header, button {
-    font-family: "Proxima Nova Semibold";
-    font-size: $typography-default-font-size;
+h1, h2, h3 {
+    margin: 0;
 }
 
 h1 {
     font-size: 72px;
-    margin: 0;
+    @include breakpoint('small') {
+        font-size: 36px;
+    }
 }
 
 h2 {
     font-size: 36px;
-    margin: 0;
+}
+
+h3 {
+    font-size: 32px;
+    @include breakpoint('small') {
+        font-size: 18px;
+    }
 }

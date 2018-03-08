@@ -1,19 +1,60 @@
-$herobanner-height: 41.8125em;
+$herobanner-width: 1240px;
+$herobanner-height: 670px;
+$herobanner-padding: 0 20px;
 $herobanner-font-color: $white;
 
 .hero-banner {
     @include breakpoint('small') {
     height: 300px;
     };
-
+    @include flexbox();
     position: relative;
     height: $herobanner-height;
+    padding: $herobanner-padding;
+    align-items: center;
+    justify-content: center;
+    color: $white;
     background-color: $denim;
 
     svg {
         position: absolute;
+        left: 0;
         bottom: 0;
         width: 100vw;
         height: 10vw;
+    }
+}
+
+.banner-content {
+    position: relative;
+    width: $herobanner-width;
+    max-width: $herobanner-width;
+    letter-spacing: 1.5px;
+    @include breakpoint('small') {
+        width: auto;
+    }
+
+    h3 {
+        margin: 30px 0;
+    }
+
+    .demo-button {
+        padding: 0 25px;
+        color: $denim;
+    }
+
+    .iphone {
+        display: none;
+        position: absolute;
+        top: -115px;
+        @include breakpoint('large') {
+            display: block;
+            height: 650px;
+            right: 0;
+        }
+        @media only screen and (min-width: 1200px) {
+            display: block;
+            right: 110px;
+        }
     }
 }

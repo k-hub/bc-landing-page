@@ -85,14 +85,9 @@ header {
     }
 
     .header-demo-button {
-        @include button(
-            $width: 180px,
-            $height: 44px,
-            $background-color: $white,
-            $border-color: $picton-blue
-        );
         margin-left: $navbar-header-nav-margin;
         color: $picton-blue;
+        border-color: $picton-blue
     }
 }
 
