@@ -14,8 +14,8 @@ header {
     }
     @include flexbox();
     display: relative;
-    position: fixed;
-    top: 0;
+    // position: fixed;
+    // top: 0;
     width: 100%;
     height: $navbar-height-medium;
 
@@ -39,6 +39,9 @@ header {
     }
 
     .logo-bc-full {
+        @include breakpoint('small') {
+            display: none;
+        }
         @include breakpoint('medium') {
             display: none;
         }
@@ -62,6 +65,9 @@ header {
 }
 
 .header-nav-expanded {
+    @include breakpoint('small') {
+        display: none;
+    }
     @include breakpoint('medium') {
         display: none;
     }

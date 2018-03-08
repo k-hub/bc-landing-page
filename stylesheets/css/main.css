@@ -29,8 +29,6 @@ header {
   display: -webkit-flex;
   display: flex;
   display: relative;
-  position: fixed;
-  top: 0;
   width: 100%;
   height: 50px; }
   @media only screen and (min-width: 1000px) {
@@ -54,7 +52,11 @@ header {
   .header-logo .logo-bc-full-small {
     display: none; } }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 801px) {
+  .header-logo .logo-bc-full {
+    display: none; } }
+
+@media only screen and (min-width: 800px) and (max-width: 999px) {
   .header-logo .logo-bc-full {
     display: none; } }
 
@@ -73,7 +75,10 @@ header {
   display: -webkit-flex;
   display: flex;
   align-items: center; }
-  @media only screen and (max-width: 999px) {
+  @media only screen and (max-width: 801px) {
+    .header-nav-expanded {
+      display: none; } }
+  @media only screen and (min-width: 800px) and (max-width: 999px) {
     .header-nav-expanded {
       display: none; } }
   .header-nav-expanded .header-nav {
@@ -127,6 +132,19 @@ header {
   .header-nav-compact .header-nav li {
     padding: 15px 0;
     border-top: 1px solid #E5E5E5; }
+
+.hero-banner {
+  position: relative;
+  height: 41.8125em;
+  background-color: #1D58BC; }
+  @media only screen and (max-width: 801px) {
+    .hero-banner {
+      height: 300px; } }
+  .hero-banner svg {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 15vw; }
 
 header {
   background-color: white; }

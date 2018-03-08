@@ -1,0 +1,18 @@
+$herobanner-height: 41.8125em;
+
+.hero-banner {
+    @include breakpoint('small') {
+    height: 300px;
+    };
+
+    position: relative;
+    height: $herobanner-height;
+    background-color: $denim;
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 15vw;
+    }
+}
