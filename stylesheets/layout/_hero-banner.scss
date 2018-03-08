@@ -54,6 +54,7 @@ $herobanner-font-color: $white;
         }
         @media only screen and (min-width: 1200px) {
             display: block;
+            height: auto;
             right: 110px;
         }
     }

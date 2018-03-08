@@ -206,6 +206,7 @@ header {
     @media only screen and (min-width: 1200px) {
       .banner-content .iphone {
         display: block;
+        height: auto;
         right: 110px; } }
 
 header {
