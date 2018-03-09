@@ -5,6 +5,7 @@ body {
 
 html {
   box-sizing: border-box;
+  background-color: $alabaster;
 }
 
 *, *:before, *:after {
@@ -12,10 +13,5 @@ html {
 }
 
 a {
-    color: $scoprion;
-    text-decoration: none;
-
-    &:visited {
-        color: $scoprion;
-    }
+    @include anchor($scoprion);
 }

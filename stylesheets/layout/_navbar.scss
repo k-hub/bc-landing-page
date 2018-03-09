@@ -6,6 +6,7 @@ $navbar-height-medium: 50px;
 $navbar-width: 1240px;
 $navbar-padding: 0 20px;
 $navbar-header-nav-margin: 30px;
+$navbar-header-color: $white;
 
 header {
     @include breakpoint('large') {
@@ -17,6 +18,7 @@ header {
     padding: $navbar-padding;
     overflow: hidden;
     justify-content: center;
+    background-color: $navbar-header-color;
 
     nav {
         @include flexbox();
@@ -35,10 +37,10 @@ header {
     }
 
     .logo-bc-full {
-        @include breakpoint('small') {
+        @include breakpoint('medium') {
             display: none;
         }
-        @include breakpoint('medium') {
+        @include breakpoint('small') {
             display: none;
         }
     }

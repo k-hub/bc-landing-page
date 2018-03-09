@@ -6,13 +6,8 @@
 
 @import "components/buttons.scss";
 
-@import "layout/navbar.scss";
+@import "layout/grid.scss";
 @import "layout/hero-banner.scss";
+@import "layout/navbar.scss";
 
-header {
-    background-color: white;
-}
-
-body {
-    background-color: lightgray;
-}
+@import "pages/index.scss";

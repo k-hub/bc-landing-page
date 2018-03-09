@@ -1,0 +1,34 @@
+<svg width="17px" height="17px" viewBox="0 0 17 17px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="392" height="416"></rect>
+    </defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LP---Email-Forwarding---Desktop" transform="translate(-645.000000, -1264.000000)">
+            <g id="Group-4" transform="translate(525.000000, 922.000000)">
+                <g id="audience-gc-copy">
+                    <g id="Rectangle-9">
+                        <use fill="none" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#979797" stroke-width="0.25" x="0.125" y="0.125" width="391.75" height="415.75"></rect>
+                    </g>
+                </g>
+                <g id="Text/Body/LtBlue/Semi" transform="translate(42.000000, 341.000000)" fill="#32ADE6" font-family="ProximaNova-Semibold, Proxima Nova" font-size="20" font-weight="500" line-spacing="28">
+                    <text id="Body">
+                        <tspan x="0" y="18">See how »</tspan>
+                    </text>
+                </g>
+                <text id="Sync-your-bid-calend" font-family="ProximaNova-Semibold, Proxima Nova" font-size="38" font-weight="500" line-spacing="40" letter-spacing="0.290909052" fill="#1D355E">
+                    <tspan x="42" y="127">Sync your </tspan>
+                    <tspan x="42" y="167">bid calendar  </tspan>
+                    <tspan x="281.976727" y="169.504" font-size="36"></tspan>
+                    <tspan x="42.38" y="208.852" font-family="ProximaNova-Light, Proxima Nova" font-size="36" font-weight="300">to Outlook or </tspan>
+                    <tspan x="42.38" y="248.852" font-family="ProximaNova-Light, Proxima Nova" font-size="36" font-weight="300">Google Calendar </tspan>
+                    <tspan x="42.38" y="288.852" font-family="ProximaNova-Light, Proxima Nova" font-size="36" font-weight="300">with Opportunity </tspan>
+                    <tspan x="42.38" y="328.852" font-family="ProximaNova-Light, Proxima Nova" font-size="36" font-weight="300">Manager.</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

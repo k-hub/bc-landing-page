@@ -1,0 +1,110 @@
+$index-font-color: $cello;
+$index-features-height: 1130px;
+$index-width: 1240px;
+$index-padding: 0 20px;
+
+.features-wrapper {
+    @include flexbox();
+    height: $index-features-height;
+    margin: 60px;
+    padding: $index-padding;
+    justify-content: center;
+
+    .features {
+        width: $index-width;
+        max-width: $index-width;
+    }
+
+    .features-header {
+        margin-bottom: 60px;
+        font-family: "Proxima Nova Semibold";
+        font-size: 48px;
+        color: $index-font-color;
+        white-space: nowrap;
+
+        @include breakpoint("x-small") {
+            font-size: 36px;
+        }
+    }
+
+    .grid {
+        @include flexbox();
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include breakpoint("large") {
+            justify-content: space-between;;
+        }
+
+        .grid-card {
+            @include create-grid($columns: 1);
+            width: 440;
+            height: 418;
+            padding: 36px 30px;
+            color: $index-font-color;
+            line-height: 1.125;
+            overflow: hidden;
+
+            @include breakpoint("large") {
+                @include create-grid($columns: 3);
+            }
+
+            @include breakpoint("x-small") {
+                width: 320px;
+                height: 300px;
+            }
+
+            .feature-header {
+                position: relative;
+                font-size: 35px;
+                font-weight: bolder;
+
+                &::before {
+                    content: url('../../assets/default-avatar-small.svg');
+                    display: block;
+                    margin-bottom: 10px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                @media only screen and (min-width: 1000px) and (max-width: 1200px) {
+                    font-size: 29px;
+                }
+
+                @include breakpoint("x-small") {
+                    font-size: 20px;
+                }
+            }
+
+            .feature-subheader {
+                font-size: 33px;
+                margin-bottom: 15px;
+
+                @media only screen and (min-width: 1000px) and (max-width: 1200px) {
+                    font-size: 27px;
+                }
+                
+                @include breakpoint("x-small") {
+                    font-size: 18px;
+                }
+            }
+
+            .see-how-link {
+                &::after {
+                    content: url('../../assets/right-chevron.svg');
+                    margin-bottom: 10px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                @include breakpoint("x-small") {
+                    font-size: 18px;
+                }
+
+                @include anchor($picton-blue);
+                font-size: 20px;
+            }
+        }
+
+    }
+}

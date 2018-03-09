@@ -4,10 +4,11 @@ $herobanner-padding: 0 20px;
 $herobanner-font-color: $white;
 
 .hero-banner {
-    @include breakpoint('small') {
-    height: 300px;
-    };
     @include flexbox();
+    @include breakpoint('small') {
+        height: 300px;
+    };
+    
     position: relative;
     height: $herobanner-height;
     padding: $herobanner-padding;
@@ -26,13 +27,13 @@ $herobanner-font-color: $white;
 }
 
 .banner-content {
+    @include breakpoint('small') {
+        width: auto;
+    }
     position: relative;
     width: $herobanner-width;
     max-width: $herobanner-width;
     letter-spacing: 1.5px;
-    @include breakpoint('small') {
-        width: auto;
-    }
 
     h3 {
         margin: 30px 0;
@@ -47,11 +48,13 @@ $herobanner-font-color: $white;
         display: none;
         position: absolute;
         top: -115px;
+
         @include breakpoint('large') {
             display: block;
             height: 650px;
             right: 0;
         }
+
         @media only screen and (min-width: 1200px) {
             display: block;
             height: auto;
