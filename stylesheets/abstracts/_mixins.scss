@@ -15,7 +15,7 @@
 /// @param  {String} $height (optional)
 /// @param  {String} $border-color (optional)
 ///
-@mixin button($background-color, $height: 44px, $border-color:null) {
+@mixin button($background-color, $height: 44px, $border-color:$white) {
     @if $border-color {
         border: 1px solid $border-color;
     }

@@ -32,7 +32,10 @@ h1 {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 48px;
+    @include breakpoint("small") {
+        font-size: 36px;
+    }
 }
 
 h3 {

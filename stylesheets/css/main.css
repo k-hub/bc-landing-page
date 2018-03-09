@@ -37,7 +37,10 @@ h1 {
       font-size: 36px; } }
 
 h2 {
-  font-size: 36px; }
+  font-size: 48px; }
+  @media only screen and (max-width: 800px) {
+    h2 {
+      font-size: 36px; } }
 
 h3 {
   font-size: 32px; }
@@ -46,6 +49,7 @@ h3 {
       font-size: 18px; } }
 
 button {
+  border: 1px solid #FFFFFF;
   height: 44px;
   padding: 0 30px;
   background-color: #FFFFFF;
@@ -217,7 +221,7 @@ header {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  height: 1130px;
+  min-height: 1130px;
   margin: 60px;
   padding: 0 20px;
   justify-content: center; }
@@ -230,7 +234,7 @@ header {
     font-size: 48px;
     color: #1D355E;
     white-space: nowrap; }
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 800px) {
       .features-wrapper .features-header {
         font-size: 36px; } }
   .features-wrapper .grid {
@@ -264,10 +268,11 @@ header {
           margin-bottom: 30px;
           box-shadow: 0 0 1px 1px #D3D3D3;
           background-color: #FFFFFF; } }
-      @media only screen and (max-width: 500px) {
+      @media only screen and (max-width: 800px) {
         .features-wrapper .grid .grid-card {
           width: 320px;
-          height: 300px; } }
+          height: 300px;
+          margin: 0 10px 30px 10px; } }
       .features-wrapper .grid .grid-card .feature-header {
         position: relative;
         font-size: 35px;
@@ -281,7 +286,7 @@ header {
         @media only screen and (min-width: 1000px) and (max-width: 1200px) {
           .features-wrapper .grid .grid-card .feature-header {
             font-size: 29px; } }
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 800px) {
           .features-wrapper .grid .grid-card .feature-header {
             font-size: 20px; } }
       .features-wrapper .grid .grid-card .feature-subheader {
@@ -290,7 +295,7 @@ header {
         @media only screen and (min-width: 1000px) and (max-width: 1200px) {
           .features-wrapper .grid .grid-card .feature-subheader {
             font-size: 27px; } }
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 800px) {
           .features-wrapper .grid .grid-card .feature-subheader {
             font-size: 18px; } }
       .features-wrapper .grid .grid-card .see-how-link {
@@ -302,8 +307,39 @@ header {
           margin-bottom: 10px;
           background-repeat: no-repeat;
           background-position: center; }
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 800px) {
           .features-wrapper .grid .grid-card .see-how-link {
             font-size: 18px; } }
         .features-wrapper .grid .grid-card .see-how-link:visited {
           color: #32ADE6; }
+
+.request-demo-banner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0 20px;
+  min-height: 325px;
+  background-color: #32ADE6;
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center; }
+  .request-demo-banner .request-demo-content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 728px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    @media only screen and (max-width: 800px) {
+      .request-demo-banner .request-demo-content {
+        width: 500px; } }
+    .request-demo-banner .request-demo-content .request-demo-header {
+      margin-bottom: 30px;
+      line-height: 1.25; }
+    .request-demo-banner .request-demo-content .demo-button {
+      color: #32ADE6; }
