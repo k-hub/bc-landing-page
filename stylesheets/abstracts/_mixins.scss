@@ -52,6 +52,6 @@
 @mixin create-grid($columns) {
     width: calc(95% / #{$columns});
     margin-bottom: 30px;
-    border: 1px solid rgba(151,151,151, 0.25);
+    box-shadow: 0 0 1px 1px $alto;
     background-color: $white;
 }

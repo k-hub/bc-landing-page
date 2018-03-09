@@ -37,6 +37,10 @@ $index-padding: 0 20px;
         }
 
         .grid-card {
+            &:hover {
+                border-top: 6px solid $denim;
+            }
+
             @include create-grid($columns: 1);
             width: 440;
             height: 418;
@@ -44,6 +48,8 @@ $index-padding: 0 20px;
             color: $index-font-color;
             line-height: 1.125;
             overflow: hidden;
+            border-top: 6px solid transparent;
+
 
             @include breakpoint("large") {
                 @include create-grid($columns: 3);
@@ -83,7 +89,7 @@ $index-padding: 0 20px;
                 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
                     font-size: 27px;
                 }
-                
+
                 @include breakpoint("x-small") {
                     font-size: 18px;
                 }
@@ -105,6 +111,5 @@ $index-padding: 0 20px;
                 font-size: 20px;
             }
         }
-
     }
 }
