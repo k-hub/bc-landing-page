@@ -33,6 +33,10 @@ header {
 }
 
 .header-navbar-logo {
+    @-moz-document url-prefix() {
+        padding-top: 7px;
+    }
+    
     .logo-bc-full-small {
         @include breakpoint('large') {
             display: none;
@@ -106,6 +110,7 @@ header {
         background-repeat: no-repeat;
         background-position: center;
         width: 50px;
+        min-height: 50px;
         height: 100%;
         cursor: pointer;
     }

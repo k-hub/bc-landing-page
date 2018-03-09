@@ -63,7 +63,7 @@ $herobanner-font-color: $white;
         position: absolute;
         top: -115px;
 
-        @include breakpoint('large') {
+        @media only screen and (min-width: 1100px) {
             display: block;
             height: 650px;
             right: 0;
