@@ -104,9 +104,9 @@ header {
     .menu-icon {
         background-image: url('../../assets/hamburger-menu.svg');
         background-repeat: no-repeat;
-        width: 24px;
-        height: 24px;
-        background-size: 24px 24px;
+        background-position: center;
+        width: 50px;
+        height: 100%;
         cursor: pointer;
     }
 
@@ -128,6 +128,7 @@ header {
         list-style: none;
         background-color: $white;
         text-align: center;
+        box-shadow: 0 1px 2px $alto;
         z-index: 1;
 
         li {
