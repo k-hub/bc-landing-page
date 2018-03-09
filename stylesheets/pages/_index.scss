@@ -1,15 +1,15 @@
 //*
-/// Index
+/// Index variables
 ///
 $index-font-color: $cello;
 $index-width: 1240px;
 $index-padding: 0 20px;
 
 //*
-/// Request Demo Banner
+/// Request Demo Banner variables
 ///
-$index-request-demo-banner-height: 325px;
 $index-request-demo-banner-content-width: 728px;
+$index-request-demo-banner-height: 325px;
 
 .features-wrapper {
     @include flexbox();
@@ -56,7 +56,6 @@ $index-request-demo-banner-content-width: 728px;
             line-height: 1.125;
             overflow: hidden;
             border-top: 6px solid transparent;
-
 
             @include breakpoint("large") {
                 @include create-grid($columns: 3);
