@@ -1,0 +1,15 @@
+{
+  "name": "bc-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-scss": "node-sass --include-path scss stylesheets/main.scss --watch scss -o stylesheets/css"
+  },
+  "keywords": [],
+  "author": "Kathy Ma",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
