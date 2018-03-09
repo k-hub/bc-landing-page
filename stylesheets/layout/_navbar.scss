@@ -23,13 +23,12 @@ header {
     nav {
         @include flexbox();
         width: $navbar-width;
-        max-width: $navbar-width;
         justify-content: space-between;
         align-items: center;
     }
 }
 
-.header-logo {
+.header-navbar-logo {
     .logo-bc-full-small {
         @include breakpoint('large') {
             display: none;

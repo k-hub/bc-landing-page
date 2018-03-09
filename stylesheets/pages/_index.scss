@@ -6,11 +6,6 @@ $index-width: 1240px;
 $index-padding: 0 20px;
 
 //*
-/// Features
-///
-$index-features-height: 1130px;
-
-//*
 /// Request Demo Banner
 ///
 $index-request-demo-banner-height: 325px;
@@ -18,7 +13,6 @@ $index-request-demo-banner-content-width: 728px;
 
 .features-wrapper {
     @include flexbox();
-    min-height: $index-features-height;
     margin: 60px;
     padding: $index-padding;
     justify-content: center;

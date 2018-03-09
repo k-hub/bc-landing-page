@@ -23,19 +23,20 @@
     padding: 0 30px;
     background-color: $background-color;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 @mixin breakpoint($breakpoint-name) {
-    @if $breakpoint-name == 'x-small' {
+    @if $breakpoint-name == "x-small" {
         @media only screen and (max-width: 500px) { @content; }
     }
-    @else if $breakpoint-name == 'small' {
+    @else if $breakpoint-name == "small" {
         @media only screen and (max-width: 800px) { @content; }
     }
-    @else if $breakpoint-name == 'medium' {
+    @else if $breakpoint-name == "medium" {
         @media only screen and (min-width: 801px) and (max-width: 999px) { @content; }
     }
-    @else if $breakpoint-name == 'large' {
+    @else if $breakpoint-name == "large" {
         @media only screen and (min-width: 1000px) { @content; }
     }
 }

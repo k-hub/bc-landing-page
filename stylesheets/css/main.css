@@ -1,13 +1,13 @@
-body {
-  margin: 0;
-  padding: 0; }
-
 html {
   box-sizing: border-box;
   background-color: #FAFAFA; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0; }
 
 a {
   color: #595959;
@@ -53,7 +53,106 @@ button {
   height: 44px;
   padding: 0 30px;
   background-color: #FFFFFF;
-  border-radius: 2px; }
+  border-radius: 2px;
+  cursor: pointer; }
+
+footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  min-height: 350px;
+  margin: 40px 0;
+  padding: 0 20px;
+  justify-content: center; }
+
+.footer-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.logo {
+  margin-right: 30px; }
+
+.footer-nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 679px) {
+    .footer-nav {
+      margin: 40px 0; } }
+  .footer-nav .half {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    @media only screen and (max-width: 679px) {
+      .footer-nav .half:not(:first-child) {
+        margin-top: 40px; } }
+  .footer-nav ul {
+    min-width: 140px;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .footer-nav ul:not(:first-child) {
+      margin-left: 40px; }
+    .footer-nav ul li {
+      margin-bottom: 20px; }
+    .footer-nav ul .category {
+      color: #1D355E;
+      font-size: 15px;
+      font-weight: bolder;
+      text-transform: uppercase;
+      white-space: nowrap; }
+    .footer-nav ul .social-media-wrapper {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: wrap; }
+      .footer-nav ul .social-media-wrapper li:not(:first-child) {
+        margin-left: 22px; }
+
+.legal {
+  flex: 1 100%;
+  color: #595959;
+  font-size: 14px; }
+  .legal ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    list-style-type: none;
+    border-top: 1px solid #000000;
+    padding-top: 13px;
+    opacity: 0.8; }
+    .legal ul li.copyright {
+      flex: 2; }
+    .legal ul li.truncated {
+      display: none; }
+    .legal ul li:not(:first-child) {
+      margin-left: 40px; }
+    @media only screen and (max-width: 800px) {
+      .legal ul li.truncated {
+        display: block; }
+      .legal ul li.expanded {
+        display: none; } }
 
 .hero-banner {
   display: -webkit-box;
@@ -128,20 +227,19 @@ header {
     display: -webkit-flex;
     display: flex;
     width: 1240px;
-    max-width: 1240px;
     justify-content: space-between;
     align-items: center; }
 
 @media only screen and (min-width: 1000px) {
-  .header-logo .logo-bc-full-small {
+  .header-navbar-logo .logo-bc-full-small {
     display: none; } }
 
 @media only screen and (min-width: 801px) and (max-width: 999px) {
-  .header-logo .logo-bc-full {
+  .header-navbar-logo .logo-bc-full {
     display: none; } }
 
 @media only screen and (max-width: 800px) {
-  .header-logo .logo-bc-full {
+  .header-navbar-logo .logo-bc-full {
     display: none; } }
 
 .header-nav-expanded a:hover, .header-nav-compact a:hover {
@@ -221,7 +319,6 @@ header {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  min-height: 1130px;
   margin: 60px;
   padding: 0 20px;
   justify-content: center; }

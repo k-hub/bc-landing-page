@@ -1,0 +1,117 @@
+//*
+/// Footer variables
+///
+$footer-height: 350px;
+$footer-width: 1240px;
+$footer-margin: 40px 0;
+$footer-padding: 0 20px;
+
+footer {
+    @include flexbox();
+    min-height: $footer-height;
+    margin: $footer-margin;
+    padding: $footer-padding;
+    justify-content: center;
+}
+
+.footer-content {
+    @include flexbox();
+    width: 100%;
+    max-width: $footer-width;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin-right: 30px;
+}
+
+.footer-nav {
+    @include flexbox();
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: 679px) {
+        margin: 40px 0;
+    }
+
+    .half {
+        @include flexbox();
+
+        @media only screen and (max-width: 679px) {
+            &:not(:first-child) {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    ul {
+        min-width: 140px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        &:not(:first-child) {
+            margin-left: 40px;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+        .category {
+            color: $cello;
+            font-size: 15px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .social-media-wrapper {
+            @include flexbox();
+            flex-wrap: wrap;
+
+            li:not(:first-child) {
+                margin-left: 22px;
+            }
+        }
+    }
+}
+
+.legal {
+    flex: 1 100%;
+    color: $scoprion;
+    font-size: 14px;
+
+    ul {
+        @include flexbox();
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+        list-style-type: none;
+        border-top: 1px solid $black;
+        padding-top: 13px;
+        opacity: 0.8;
+
+        li {
+            &.copyright {
+                flex: 2;
+            }
+            &.truncated {
+                display: none;
+            }
+
+            &:not(:first-child) {
+                margin-left: 40px;
+            }
+
+            @include breakpoint('small') {
+                &.truncated {
+                    display: block;
+                }
+
+                &.expanded {
+                    display: none;
+                }
+            }
+        }
+    }
+}
