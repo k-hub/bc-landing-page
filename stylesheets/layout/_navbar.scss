@@ -13,23 +13,22 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: $navbar-height-medium;
     padding: $navbar-padding;
-    overflow: hidden;
     justify-content: center;
     background-color: $navbar-header-color;
     box-shadow: 0 1px 2px $alto;
     z-index: 1;
 
-    @include breakpoint('large') {
-        height: $navbar-height-full;
-    }
-
     nav {
         @include flexbox();
         width: $navbar-width;
+        height: $navbar-height-medium;
         justify-content: space-between;
         align-items: center;
+
+        @include breakpoint('large') {
+            height: $navbar-height-full;
+        }
     }
 }
 

@@ -220,16 +220,11 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 50px;
   padding: 0 20px;
-  overflow: hidden;
   justify-content: center;
   background-color: #FFFFFF;
   box-shadow: 0 1px 2px #D3D3D3;
   z-index: 1; }
-  @media only screen and (min-width: 1000px) {
-    header {
-      height: 60px; } }
   header nav {
     display: -webkit-box;
     display: -moz-box;
@@ -237,8 +232,12 @@ header {
     display: -webkit-flex;
     display: flex;
     width: 1240px;
+    height: 50px;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (min-width: 1000px) {
+      header nav {
+        height: 60px; } }
 
 @-moz-document url-prefix() {
   .header-navbar-logo {
@@ -448,6 +447,10 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center; }
+
+@-moz-document url-prefix() {
+  .request-demo-banner .request-demo-content {
+    width: 750px; } }
     @media only screen and (max-width: 800px) {
       .request-demo-banner .request-demo-content {
         width: 500px; } }
