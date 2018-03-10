@@ -6,6 +6,6 @@
 
     `npm install`
   
-4. If you want to make css edits to scss files, run the following command:
+4. If you want to watch your css edits to the scss files, run the following command:
 
     `npm run watch-scss`
